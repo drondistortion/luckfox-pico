@@ -53,5 +53,5 @@ echo "export RK_BOOTARGS_CMA_SIZE=\"1M\"" >> .BoardConfig.mk
 popd || exit
 
 rm -rf output
-mkdir -p output
+mkdir -p output/image
 cp sdk/output/image/update.img "output/$DEVICE_NAME-sysupgrade.img"
